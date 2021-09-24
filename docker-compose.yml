@@ -20,7 +20,7 @@ services:
       - POSTGRES_PASSWORD=onlinejudge
 
   judge-server:
-    image: wendster/judge-server
+    image: qingdaou/judge_server
     container_name: judge-server
     restart: always
     read_only: true
@@ -44,7 +44,7 @@ services:
       # - judger_debug=1
   
   oj-backend:
-    image: wendster/oj-backend
+    image: qingdaou/onlinejudge
     container_name: oj-backend
     restart: always
     depends_on:
